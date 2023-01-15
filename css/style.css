@@ -5,7 +5,7 @@
   margin: 0; }
 
 body {
-  background: linear-gradient(25deg, #4534b3, #4fe6da); }
+  background-color: #e6e6e6; }
 
 ul {
   list-style: none; }
@@ -23,3 +23,48 @@ img {
 .container {
   max-width: 1200px;
   margin: 0 auto; }
+
+.header {
+  background-color: #fff;
+  padding: 10px 0;
+  border-bottom: 1px solid #e6dfdf; }
+  .header .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .header .navbar .navbar__logo .navbar__logo-image {
+      width: 100%;
+      cursor: pointer; }
+    .header .navbar .navbar__menu {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+      @media (max-width: 405px) {
+        .header .navbar .navbar__menu {
+          display: none; } }
+      .header .navbar .navbar__menu .navbar__item-link {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+        margin: 0 15px;
+        padding: 5px;
+        color: #b0adad;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: 400;
+        font-family: "Poppins", sans-serif;
+        transition: 0.3s color ease-in-out; }
+        .header .navbar .navbar__menu .navbar__item-link:hover {
+          color: #164958; }
+        .header .navbar .navbar__menu .navbar__item-link > .bx {
+          color: #3b94df;
+          font-size: 25px; }
+    .header .navbar .navbar__trigger {
+      font-size: 43px;
+      cursor: pointer;
+      color: #3b94df;
+      display: none; }
+      @media (max-width: 405px) {
+        .header .navbar .navbar__trigger {
+          display: block;
+          margin-right: 10px; } }

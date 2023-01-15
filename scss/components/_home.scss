@@ -1,7 +1,7 @@
 .header{
-  background-color: #ffffff;
+  background-color: $navbar-color;
   padding: 10px 0;
-  border-bottom: 1px solid #dfd4d4;
+  border-bottom: 1px solid #e6dfdf;
 
   .navbar{
     display: flex;
@@ -9,19 +9,20 @@
     justify-content: space-between;
 
     .navbar__logo{
-      font-size: 25px;
-      font-family: sans-serif;
-      cursor: pointer;
-      color: gray;
 
       .navbar__logo-image{
        width: 100%;
+        cursor: pointer;
       }
     }
     .navbar__menu{
       display: flex;
       justify-content: space-between;
       align-items: center;
+
+      @media (max-width: $small-breakpoint) {
+        display: none;
+      }
 
 
       .navbar__item-link{
@@ -30,22 +31,31 @@
         gap: 3px;
         margin: 0 15px;
         padding: 5px;
-        color: gray;
+        color: $text-color;
         border-radius: 10px;
         font-size: 18px;
-        font-weight: 200;
-        font-family: sans-serif;
+        font-weight: 400;
+        font-family: $main-font;
         transition: 0.3s color ease-in-out;
 
         &:hover{
-          color: #333232;
+          color: #164958;
         }
-
         > .bx{
           color: #3b94df;
           font-size: 25px;
         }
+      }
+    }
+    .navbar__trigger{
+      font-size: 43px;
+      cursor: pointer;
+      color: #3b94df;
+      display: none;
 
+      @media (max-width: $small-breakpoint) {
+        display: block;
+        margin-right: 10px;
       }
     }
   }

@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,500;0,600;1,100;1,200&display=swap');
-$main-color: #edecec;
-$text-color: #333232;
+$small-breakpoint: 405px;
+$medium-breakpoint: 768px;
+$large-breakpoint: 1024px;
+$main-color: #e6e6e6;
+$text-color: #b0adad;
 $navbar-color: #fff;
 $btn-color: linear-gradient(25deg, #4534b3, #adfdf9);
 $main-font: 'Poppins', sans-serif;
-
 *, *::before, *::after{
   box-sizing: border-box;
   padding: 0;
